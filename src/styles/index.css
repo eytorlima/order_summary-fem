@@ -1,0 +1,204 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    background: hsl(225, 100%, 94%);
+    width: 100vw;
+    height: 100vh;
+}
+
+main {
+    display: flex;
+    background: url("../imgs/pattern-background-desktop.svg");
+    background-attachment: fixed;
+    background-repeat: repeat-x;
+    width: 100vw;
+    height: 100vh;
+}
+
+div#main-card {
+    width: 450px;
+    height: 700px;
+    border-radius: 18px;
+    background-color: white;
+    box-shadow: 0px 16px 20px #d6e1ff;
+    margin: auto auto;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+div#img-section {
+    width: 100%;
+    height: fit-content;
+    border-radius: 18px 18px 0px 0px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div#img-section img {
+    width: 100%;
+}
+
+div#texts-section {
+    width: 100%;
+    height: fit-content;
+}
+
+div#title {
+    margin-top: 40px;
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+    text-align: center;
+}
+
+div#text {
+    margin: 20px auto 0px;
+    text-align: center;
+    width: 300px;
+    font-size: 1.1rem;
+    color: hsl(224, 23%, 55%);
+}
+
+div#mini-card {
+    width: 350px;
+    height: 90px;
+    margin: 30px auto 0px;
+    border-radius: 8px;
+    background-color: hsl(225, 100%, 98%);
+    display: flex;
+}
+
+div#img-mini {
+    width: 80px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div#plan-year {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+span#plan {
+    font-size: 1.1rem;
+    font-weight: 900;
+    margin-bottom: 5px;
+    color: hsl(223, 47%, 23%);
+}
+
+span#year {
+    color: hsl(224, 23%, 55%);
+}
+
+div#change {
+    height: fit-content;
+    color: hsl(245, 75%, 52%);
+    font-weight: 700;
+    text-decoration: underline;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto 0px auto 80px;
+    transition: all 300ms ease-in-out;
+}
+
+div#change:hover {
+    cursor: pointer;
+    color: hsla(245, 75%, 52%, 0.5);
+}
+
+div#button {
+    margin: 30px auto 0px;
+    width: 350px;
+    height: 50px;
+    border-radius: 6px;
+    color: white;
+    background-color: hsl(245, 75%, 52%);
+    box-shadow: 0px 4px 20px hsla(245, 75%, 52%, 0.5);
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 300ms ease-in-out;
+}
+
+div#button:hover {
+    cursor: pointer;
+    background-color: hsla(245, 75%, 52%, 0.5);
+}
+
+div#cancel {
+    width: fit-content;
+    margin: 40px auto;
+    color: hsl(224, 23%, 55%);
+    font-weight: 700;
+    transition: all 300ms ease-in-out;
+}
+
+div#cancel:hover {
+    cursor: pointer;
+    color: hsl(223, 47%, 23%);
+}
+
+@media (max-width: 450px) {
+
+    div#main-card {
+        width: 90%;
+        height: fit-content;
+        padding-bottom: 15px;
+        margin: auto auto;
+    }
+    
+    div#text {
+        width: 90%;
+        font-size: 0.9rem;
+    }
+
+    div#mini-card {
+        width: 85%;
+    }
+
+    div#img-mini {
+        margin-left: 5px;
+    }
+
+    div#plan-year {
+        width: 106px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    span#plan {
+        font-size: 0.84rem;
+    }
+
+    span#year {
+        font-size: 0.7rem;
+    }
+
+    div#change {
+        margin-left: auto;
+        margin-right: 15px;
+        font-size: 0.9rem;
+    }
+
+    div#button {
+        width: 80%;
+        font-size: 0.9rem;
+    }
+}
